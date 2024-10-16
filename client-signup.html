@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Sign Up - Skilled Worker Company</title>
+    <link rel="stylesheet" href="client-signup.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="client-signup.html" class="active">Client Sign Up</a></li>
+            </ul>
+        </nav>
+        <h1>Sign Up as a Client</h1>
+    </header>
+
+    <section class="signup-section">
+        <h2>Create Your Client Profile</h2>
+        <p>Please fill out the form below to register as a client on our platform.</p>
+
+        <form class="signup-form" action="#" method="post">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+        
+            <fieldset>
+                <legend>Business/Project Information</legend>
+
+                <label for="company-name">Company Name (if applicable):</label>
+                <input type="text" id="company-name" name="company-name">
+
+                <label for="project-type">Type of Project:</label>
+                <select id="project-type" name="project-type" required>
+                    <option value="construction">Construction</option>
+                    <option value="renovation">Renovation</option>
+                    <option value="repair">Repair</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="project-description">Brief Project Description:</label>
+                <textarea id="project-description" name="project-description" rows="5" required></textarea>
+
+                <label for="budget">Estimated Budget:</label>
+                <input type="number" id="budget" name="budget" required>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Agreement</legend>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">terms and conditions</a>.</label>
+            </fieldset>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Skilled Worker Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

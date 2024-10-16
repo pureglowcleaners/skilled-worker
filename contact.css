@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white; 
+}
+
+header {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background: red;
+    border-radius: 5px;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-section {
+    padding: 40px 20px;
+    background: rgba(5, 5, 5, 0.7);
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section h2 {
+    margin-top: 20px;
+    color: #ff7e5f;
+}
+
+.contact-form, .report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea,
+.report-form input, .report-form textarea {
+    padding: 10px;
+    border: 2px solid #ff7e5f;
+    border-radius: 5px;
+}
+
+.contact-form button, .report-form button {
+    background-color: #e70707;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover, .report-form button:hover {
+    background-color: #e70707;
+}
+
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 24px;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+    }
+
+    .contact-section input, .contact-section textarea {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .contact-section h2 {
+        font-size: 22px;
+    }
+
+    .contact-section p {
+        font-size: 14px;
+    }
+
+    .contact-section input, .contact-section textarea {
+        font-size: 14px;
+    }
+}
